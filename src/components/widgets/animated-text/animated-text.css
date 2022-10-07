@@ -1,0 +1,9 @@
+.job-div {
+  padding: auto;
+  color: black;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+

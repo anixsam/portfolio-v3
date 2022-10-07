@@ -1,0 +1,139 @@
+:root {
+  --color-primary-light: white;
+  --color-secondary-light: black;
+  --color-primary-box-shadow-light: none;
+
+  --color-primary-nav-light-hover: black;
+  --color-secondary-nav-light-hover: rgba(255, 255, 255, 0.215);
+  --color-light-nav-hover: white;
+
+  --color-primary-nav-light-active: black;
+  --color-primary-box-shadow-light-active: rgba(255, 255, 255, 0.215);
+
+  --color-primary-ham-light: white;
+  --color-secondary-ham-light: black;
+  --color-primary-light-ham-shadow: none;
+  --color-primary-light-ham-hover: black;
+  --color-secondary-light-ham-hover: white;
+  --color-light-ham-hover: rgba(255, 255, 255, 0.215);
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.navbar nav {
+  height: 100%;
+  width: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.navbar nav a {
+  height: 56px;
+  width: 56px;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-secondary-light);
+  background-color: transparent;
+  border-radius: 100%;
+  padding: 10px auto;
+  margin-top: 10px;
+  transition: all 0.3s ease-in;
+
+  box-shadow: -5px -5px 10px var(--color-primary-box-shadow-light) inset;
+}
+
+.navbar nav a:hover {
+  color: rgba(0, 0, 0, 0.674) !important;
+}
+
+.navbar nav a::after
+{
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: 28px;
+  width: 0px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: black;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+}
+
+.navbar nav a:hover::after
+{
+  right: 20px;
+  width: 15px;
+  border-radius: 15px;
+  transition: all 0.3s ease-in;
+}
+
+
+.hamburger {
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  top: 10px;
+  right: 10px;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+  color: var(--color-secondary-ham-light);
+  background-color: transparent;
+  transition: all 0.2s ease-in;
+
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  font-size: 28px;
+
+  transition: all 0.2s ease-in;
+}
+
+.active {
+  background-color: transparent !important;
+}
+
+.active::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 60px !important;
+  right: 25px !important;
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 100% !important;
+  background-color: black;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+
+}
+
+.active:hover {
+  background-color: transparent !important;
+  color: rgba(0, 0, 0, 0.674) !important;
+}
+
+.active:hover::after {
+  right: 20px;
+  width: 15px;
+  border-radius: 15px;
+  transition: all 0.3s ease-in;
+}

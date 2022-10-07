@@ -1,0 +1,23 @@
+.animated-logo
+{
+    width: 6vh;
+    height: 6vh;
+    position: fixed;
+    opacity: 0.8;
+    margin: 10px;
+    z-index : 100 ;
+    transition: all 0.3s ease-in;
+}
+
+.animated-logo:hover
+{
+    opacity: 1;
+    transition: all 0.2s ease-in;
+}
+
+.animated-logo img
+{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}

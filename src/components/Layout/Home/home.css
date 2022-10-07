@@ -1,0 +1,29 @@
+.home
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    font-size: 3vh;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+}
+
+.home-content
+{
+    width: 100%;
+    height: max-content;
+}
+
+.name-text
+{
+    text-align : center;
+    width: 100%;
+    font-size: 40px;
+}
+
+.job-text
+{
+    width: 100%;
+    text-align : center;
+}

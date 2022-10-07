@@ -1,0 +1,29 @@
+.social-card {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social-card-ul {
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.social-card-li {
+  float: left;
+  background-color: transparent;
+}
+
+.social-card-a {
+  text-decoration: none;
+  padding: 10px 25px;
+  background-color: transparent;
+    color:black;
+  transition: all 0.2s ease-in;
+}

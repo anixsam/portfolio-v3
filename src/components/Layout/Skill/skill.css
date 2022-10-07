@@ -1,0 +1,21 @@
+.skill
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    /* align-items: center; */;
+}
+
+.skill-head
+{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.skills
+{
+    border: solid blue;
+}
